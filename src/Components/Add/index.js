@@ -66,7 +66,7 @@ class AddComponent extends React.Component{
 
     registar = async () => {
         const data = {
-            nome: this.state.contacto_empresa,
+            nome: this.state.nome,
             email: this.state.email,
             password: this.state.lat,
             lat: this.state.lat,
