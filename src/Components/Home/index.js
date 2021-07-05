@@ -26,6 +26,9 @@ class ListComponent extends Component{
       
       if (result) {
           this.sendDelete(id)
+          this.setState({
+              listGestores: this.state.listGestores.filter((gestor) => gestor.id !== id)
+          })
       }
     }
 
