@@ -1,8 +1,5 @@
 import React from 'react'
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-const baseURL = 'http://localhost/3000'
 
 class AddComponent extends React.Component{
     constructor(props){
