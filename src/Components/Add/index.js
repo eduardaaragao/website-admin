@@ -68,7 +68,7 @@ class AddComponent extends React.Component{
         const data = {
             nome: this.state.nome,
             email: this.state.email,
-            password: this.state.lat,
+            password: this.state.password,
             lat: this.state.lat,
             lon: this.state.lon,
             nome_empresa: this.state.nome_empresa,
