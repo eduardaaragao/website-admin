@@ -32,7 +32,7 @@ class AddComponent extends React.Component{
                 <div className="form-row">
                     <div className="form-group col-md-6">
                         <label htmlFor="input"></label>
-                        <input type="passwod" className="form-control" placeholder="Digite a password" value={this.state.password} onChange={(val) => this.setState({password: val.target.value})}></input>
+                        <input type="password" className="form-control" placeholder="Digite a password" value={this.state.password} onChange={(val) => this.setState({password: val.target.value})}></input>
                     </div>
 
                     <div className="form-group col-md-6">
