@@ -69,17 +69,22 @@ class AddComponent extends React.Component{
             nome: this.state.nome,
             email: this.state.email,
             password: this.state.password,
-            lat: this.state.lat,
-            lon: this.state.lon,
             nome_empresa: this.state.nome_empresa,
             contacto_empresa: this.state.contacto_empresa,
+            lat: this.state.lat,
+            lon: this.state.lon,
         }
 
-        try{
-            await axios.post('auth/registoGestor', data)
-        }catch(e){
-            alert(e)
-        }
+                  // Fazer Pedido à API
+                  axios.post('auth/registoGestor', data).then(
+                    res => {
+                        if (res.data.data){
+                            alert("Dados enviados")
+                        }
+                    }
+                ).catch(err =>{
+                    alert(err)
+                })
     }
 
     sendSave(){
